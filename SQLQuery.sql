@@ -7,7 +7,7 @@ go
 select * from dbo.Zepto_v2;
 
 
---Data Exploration
+--Data Exploration.
 
 -- 1.Count total rows in Zepto table
 select count(*) as TotalRows
@@ -233,4 +233,5 @@ FROM dbo.zepto_cleaned
 WHERE outOfStock = 0
 GROUP BY Category
 ORDER BY total_inventory_weight DESC;
+
 
