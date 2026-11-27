@@ -7,7 +7,7 @@ go
 select * from dbo.Zepto_v2;
 
 
---Data Exploration.
+--Data Exploration
 
 -- 1.Count total rows in Zepto table
 select count(*) as TotalRows
@@ -42,7 +42,7 @@ from dbo.zepto_v2
 group by outOfStock;
 
 
---6.Check null value in all columns 
+--6.Check null value in all columns.
 select* from dbo.zepto_v2
 where Category is null
    or name is null
@@ -91,7 +91,7 @@ order by highest_discount desc;
 select * from dbo.zepto_v2
 where mrp=0;
 
---11.Check Products with zero MRP and selling price
+--11.Check Products with zero MRP and selling price.
 select
 	name,
 	mrp,
